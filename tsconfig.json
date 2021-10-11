@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        // nodejs에서 동작 > ommonjs 
+        "module": "commonjs",
+        "target": "ES2019",
+        "lib": [
+            "es2018",
+            "es2020",
+            "esnext.asynciterable"
+        ],
+        // 트랜스파일 디렉터리에는 .js 파일 외에도, .js.map 파일이 만들어짐 > js코드가 ts코드 어디에 해당하는지 알려줌 ,, 주로 디버깅 시 사용 
+        "sourceMap": true,
+        "allowJs": true,
+        "moduleResolution": "node",
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": false,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noUnusedLocals": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    },
+    // src디렉터리는 물론, src 하위 디렉터리에 있는 모든 파일을 컴팔 대상으로 포함 ,, 
+    "include": [
+        "src/**/*"
+    ]
+}
